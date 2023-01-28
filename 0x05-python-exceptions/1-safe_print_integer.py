@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def save_print_interger(value):
+def save_print_integer(value):
     try:
         print("{:d}".format(value))
         return (True)
