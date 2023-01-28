@@ -2,6 +2,6 @@
 def save_print_interger(value):
     try:
         print("{:d}".format(value))
-        return (True)
-    except (ValueError, TypeError):
-        return (False)
+        return True
+    except (TypeError, ValueError):
+        return False
