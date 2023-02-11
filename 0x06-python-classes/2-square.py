@@ -4,10 +4,9 @@
 
 class Square:
     """ Represent a square """
-    
     def __int__(self, size=0):
         """Initialize a new square
-        
+
         Args:
             size (int): represent the size of a the sqaure
         """
