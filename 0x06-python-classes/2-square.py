@@ -9,7 +9,7 @@ class Square:
         size(int) : the size of the square
     """
     def __init__(self, size=0):
-        if type(size) != int:
+        if isinstance(size, int):
             raise TypeError("size must be an interger")
         if size < 0:
             raise TypeError("size must be >=0")
