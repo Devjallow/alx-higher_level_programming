@@ -6,13 +6,16 @@ class Square:
     """Represent a class square"""
     def __init__(self, size=0):
         """
-        Initialize a square object
+        Initializing a square
+
         Arg:
-            size(int) first parameter 
+            size(int): size of the integer
         Raise:
-            raise typeerror if value is not int
-            raise value error if value is less than 0
+            raise TypeError if value is not int
+            raise ValueError if value is less than zero
         """
+        self.__size = size
+
     @property
     def size(self):
         """object setter retrive the value of square
