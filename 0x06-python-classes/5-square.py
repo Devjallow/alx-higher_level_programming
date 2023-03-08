@@ -2,7 +2,6 @@
 """ Define a square """
 
 
-
 class Square:
     """ Represent a square """
     def __init__(self, size=0):
@@ -29,10 +28,17 @@ class Square:
         elif value < 0:
             raise ValueError("value must be >= 0")
         else:
-            return self.__size = value
+            self.__size = value
+
     def area(self):
         """ return area of a square """
         return self.__size ** 2
+
     def my_print(self):
         """ print square """
-        pass
+        if self.__size == 0:
+            print()
+        for i in range(self.__size):
+            for j in range(self.__size):
+                print("#", end='')
+            print()
